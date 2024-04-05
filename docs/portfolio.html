@@ -4,6 +4,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shraddhesh Subhash Kamal - Portfolio</title>
 <link rel="stylesheet" href="./stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.css">
+<style>
+        /* Add your CSS styles here */
+        .project-thumbnail {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .project-thumbnail img {
+            width: 100%; /* Ensure images fill the available space */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure images are block-level elements */
+            margin: 10px;
+        }
+        .mini-thumbnails {
+        display: flex;
+        flex-flow: row;
+        justify-content: center; /* Align mini-thumbnails to the left */
+        margin-top: 10px; /* Add some space between regular thumbnail and mini-thumbnails */
+        flex: 0 0 100%; /* Adjust width of mini-thumbnails (4 thumbnails per row) */
+    }
+
+    .mini-thumbnails a {
+        margin-right: 10px; /* Add some space between mini-thumbnails */
+        margin-bottom: 10px; /* Add some space below mini-thumbnails */
+        max-height: 100px; /* Set maximum height for mini-thumbnails */
+    }
+
+    .mini-thumbnails img {
+        width: 100%; /* Ensure images fill the mini-thumbnails */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure block-level display */
+        object-fit: contain;
+        max-height: 100px;
+    }
+    </style>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1129.0" data-gr-ext-installed="">
 
@@ -30,18 +66,34 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
 
 <div class="main">
   <h2>Portfolio</h2>
-  <p>A selection of my product design, mechanical engineering, and continuous improvement projects.</p>
+  <p>A selection of my product design and mechanical engineering projects. <br>For viewing a collection of my continuous improvement projects, please refer to the 'Experience' section on my <a target="blank" href="https://in.linkedin.com/in/shraddheshkamal">LinkedIn</a> page.</p>
 
     <div class="portfolio-container">
         <div class="portfolio-container_text">        
             <h3 class="portfolio_accent">LMNS (pronounced "Lemons")</h3>
                 
-            <p>When life gives you lemons, download an STL file for a lemon juicer and 3D print it, reverse engineer the design to change the feature according to your preference, perform FEA, create a mold for injection molding, run a manufacturing simulation, create a physical prototype of the juicer via injection molding, create DVP&R and perform rapid iterative prototyping of the mold and the juicer, perform tolerance analysis and create drawings of the final model with BOM and GD&T for manufacturing, conduct physical testing of the model, while sipping on the lemonade that you made for yourself, conduct market analysis for gauging supply vs demand, start batch production of the final model, create such a brand identity that whenever life gives someone lemons, YOUR lemon juicer is the one they think of and buy! </p>
+            <p>LMNS is a continuously improving personal project which highlights my conceptualization, reverse engineering and advanced surface modeling skills. It helped me work on my NPI (New Product Introduction) understanding. <br> <br>When life gives you lemons, download an STL file for a lemon juicer and 3D print it, reverse engineer the design to change the feature according to your preference, perform FEA, create a mold for injection molding, run a manufacturing simulation, create a physical prototype of the juicer via injection molding, create DVP&R and perform rapid iterative prototyping of the mold and the juicer, perform tolerance analysis and create drawings of the final model with BOM and GD&T for manufacturing, conduct physical testing of the model, while sipping on the lemonade that you made for yourself, conduct market analysis for gauging supply vs demand, start batch production of the final model, create such a brand identity that whenever life gives someone lemons, YOUR lemon juicer is the one they think of and buy! <br><br> Link to the Original Model that I improved upon: <a target="blank" href="https://www.thingiverse.com/thing:1058165">https://www.thingiverse.com/thing:1058165</a> (All credits to the original creator. No copyright infringement intended.)</p>
                 
             <p><a target="blank" href="https://github.com/ShraddheshKamal/shraddheshkamal.github.io/blob/main/docs/stl/Lemon2.STL">STL File</a></p>
         </div>
-        <div class="portfolio-container_text">
-            <img class="portfolio_image" src="./img/LMNS.png" style="width:auto;max-width:100%" alt="LMNS">
+        <div class="project-thumbnail">
+            <a href="./img/LMNS/LMNS.png" data-lightbox="project1" title="LMNS">
+                <img src="./img/LMNS/LMNS.png" alt="Click for more pictures..." title="LMNS Improved CAD Model">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/LMNS/LMNS_2.jpeg" data-lightbox="project1" title="LMNS">
+                <img src="./img/LMNS/LMNS_2.jpeg" alt="Click for more pictures..." title="Original 3D Printed Prototype Picture 1">
+                </a>
+                <a href="./img/LMNS/LMNS_3.jpeg" data-lightbox="project1" title="LMNS">
+                    <img src="./img/LMNS/LMNS_3.jpeg" alt="Click for more pictures..." title="Original 3D Printed Prototype Picture 2">
+                </a>
+                <a href="./img/LMNS/LMNS_4.jpg" data-lightbox="project1" title="LMNS">
+                    <img src="./img/LMNS/LMNS_4.jpg" alt="Click for more pictures..." title="Improvement Sketch 1">
+                </a>
+                <a href="./img/LMNS/LMNS_5.jpg" data-lightbox="project1" title="LMNS">
+                    <img src="./img/LMNS/LMNS_5.jpg" alt="Click for more pictures..." title="Improvement Sketch 2">
+                </a>
+            </div>
         </div>
     </div>
   
@@ -57,9 +109,33 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
             <p>
 <a target="blank" href="https://www.youtube.com/watch?v=N3CgNRUDO80">Jaw Force Sensor Demo Video</a> <br> <a target="blank" href="./media/Jaw Force Sensor Presentation.pdf">Jaw Force Sensor Presentation</a> <br> <a target="blank" href="./media/JawForce Report.pdf">Final Report</a> </p>
         </div>
-        <div class="portfolio-container_text">
-            <img class="portfolio_image" src="./img/jawforce.png" style="width:auto;max-width:100%" alt="Jaw Force Sensor">
+        <!-- <div class="portfolio-container_text">
+            <img class="portfolio_image" src="./img/JFS/jawforce.png" style="width:auto;max-width:100%" alt="Jaw Force Sensor">
+        </div> -->
+
+        <div class="project-thumbnail">
+            <a href="./img/JFS/jawforce.png" data-lightbox="project2" title="Jaw Force Sensor">
+                <img src="./img/JFS/jawforce.png" alt="Click for more pictures..." title="Jaw Force Sensor Prototype">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/JFS/JFSConcept.png" data-lightbox="project2" title="Jaw Force Sensor">
+                <img src="./img/JFS/JFSConcept.png" alt="Click for more pictures..." title="Concept">
+                </a>
+                <a href="./img/JFS/JFS CAD.png" data-lightbox="project2" title="Jaw Force Sensor">
+                    <img src="./img/JFS/JFS CAD.png" alt="Click for more pictures..." title="CAD Model">
+                </a>
+                <a href="./img/JFS/Mold CAD.png" data-lightbox="project2" title="Jaw Force Sensor">
+                <img src="./img/JFS/Mold CAD.png" alt="Click for more pictures..." title="CAD Model for Casting Mold">
+                </a>
+                <a href="./img/JFS/JFS FEA.png" data-lightbox="project2" title="Jaw Force Sensor">
+                <img src="./img/JFS/JFS FEA.png" alt="Click for more pictures..." title="FEA Stress Result for hyperelastic material">
+                </a>
+                <a href="./img/JFS/JFS Casting.png" data-lightbox="project2" title="Jaw Force Sensor">
+                <img src="./img/JFS/JFS Casting.png" alt="Click for more pictures..." title="Casting Process">
+                </a>
+            </div>
         </div>
+
     </div>
 
     <!--
@@ -89,9 +165,25 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
             
         <p><a target="blank" href="./media/Thermal Management Presentation.pdf">Thermal Management of Electronics and Data Centers Presentation</a><br> <a target="blank" href="./media/Thermal Management Report.pdf">Final Report</a></p>
         </div>
-        <div class="portfolio-container_text">
+        <!-- <div class="portfolio-container_text">
             <img alt="Thermal Management" src="./img/thermal.png" style="width:auto;max-width:100%" class="portfolio_image">
+        </div> -->
+
+
+        <div class="project-thumbnail">
+            <a href="./img/TMEDC/thermal.png" data-lightbox="project3" title="Thermal Management">
+                <img src="./img/TMEDC/thermal.png" alt="Click for more pictures..." title="Thermal Management of Electronics">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/TMEDC/DC.png" data-lightbox="project3" title="Thermal Management">
+                <img src="./img/TMEDC/DC.png" alt="Click for more pictures..." title="Thermal Management of Data Centers">
+                </a>
+                <a href="./img/TMEDC/PChart.png" data-lightbox="project3" title="Thermal Management">
+                    <img src="./img/TMEDC/PChart.png" alt="Click for more pictures..." title="ASHRAE TC 9.9 Psychrometric Chart">
+                </a>
+            </div>
         </div>
+
     </div>
 
     <div class="portfolio-container">
@@ -105,9 +197,31 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
             <p></p>
             <p><a target="blank" href="./media/IMU Shoe Presentation.pdf">Presentation</a> <br> <a target="blank" href="./media/imushoe report.pdf">Final Report</a> <br> <a target="blank" href="https://youtu.be/Z_xZNZQt3u0?si=sDWu9NecB_M7hYwp">Assembly Demo Video</a></p>
         </div>
-        <div class="portfolio-container_text">
+        <!-- <div class="portfolio-container_text">
             <img alt="IMU Shoe" src="./img/imushoe/IMU Shoe Render.JPG" style="width:auto;max-width:100%" class="portfolio_image">
+        </div> -->
+
+        <div class="project-thumbnail">
+            <a href="./img/imushoe/IMU Shoe Render.JPG" data-lightbox="project4" title="IMU Shoe">
+                <img src="./img/imushoe/IMU Shoe Render.JPG" alt="Click for more pictures..." title="IMU Shoe Rendered">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/imushoe/IMU Shoe Assembly Exploded.png" data-lightbox="project4" title="IMU Shoe">
+                <img src="./img/imushoe/IMU Shoe Assembly Exploded.png" alt="Click for more pictures..." title="IMU Shoe Assembly Exploded">
+                </a>
+                <a href="./img/imushoe/FEA Stress.png" data-lightbox="project4" title="IMU Shoe">
+                    <img src="./img/imushoe/FEA Stress.png" alt="Click for more pictures..." title="FEA Stress results for mechanism">
+                </a>
+                <a href="./img/imushoe/FEA Disp.png" data-lightbox="project4" title="IMU Shoe">
+                <img src="./img/imushoe/FEA Disp.png" alt="Click for more pictures..." title="FEA Displacement results for mechanism">
+                </a>
+                <a href="./img/imushoe/prototype.jpeg" data-lightbox="project4" title="IMU Shoe">
+                <img src="./img/imushoe/prototype.jpeg" alt="Click for more pictures..." title="3D Printed Prototype">
+                </a>
+            </div>
         </div>
+
+
     </div>
      <div class="portfolio-container">
             <div class="portfolio-container_text">        
@@ -120,9 +234,30 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p><a target="blank" href="./media/Mech Behaviour Fiber Presentation.pdf">Mechanical Behavior of Fiber Reinforced Composites Presentation</a></p>
             </div>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/mechbehav.jpeg" style="width:auto;max-width:100%" alt="Fiber Reinforced Composites">
+            </div> -->
+
+            <div class="project-thumbnail">
+            <a href="./img/mechbehav/FMAssem.png" data-lightbox="project5" title="Fiber Reinforced Composites">
+                <img src="./img/mechbehav/FMAssem.png" alt="Click for more pictures..." title="Fiber + Matrix CAD Assembly">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/mechbehav/mechbehav.jpeg" data-lightbox="project5" title="Fiber Reinforced Composites">
+                <img src="./img/mechbehav/mechbehav.jpeg" alt="Click for more pictures..." title="Fiber Geometry">
+                </a>
+                <a href="./img/mechbehav/Matrix.png" data-lightbox="project5" title="Fiber Reinforced Composites">
+                    <img src="./img/mechbehav/Matrix.png" alt="Click for more pictures..." title="Matrix CAD">
+                </a>
+                <a href="./img/mechbehav/BCTension.png" data-lightbox="project5" title="Fiber Reinforced Composites">
+                <img src="./img/mechbehav/BCTension.png" alt="Click for more pictures..." title="Boundary Conditions for Tension along fiber">
+                </a>
+                <a href="./img/mechbehav/GFRP Stress.png" data-lightbox="project5" title="Fiber Reinforced Composites">
+                <img src="./img/mechbehav/GFRP Stress.png" alt="Click for more pictures..." title="Stress FEA for tension along fibers of Glass Fiber Reinforced Polymer">
+                </a>
             </div>
+        </div>
+
         </div>
 <div class="portfolio-container">
             <div class="portfolio-container_text">        
@@ -135,9 +270,28 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p><a target="blank" href="./media/Additive Report.pdf">On-site Repair Application of Additive Manufacturing Report</a></p>
             </div>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/additive/Picture3.png" style="width:auto;max-width:100%" alt="On-site Repair">
+            </div> -->
+
+            <div class="project-thumbnail">
+            <a href="./img/additive/Picture3.png" data-lightbox="project6" title="Additive Repair">
+                <img src="./img/additive/Picture3.png" alt="Click for more pictures..." title="FEA for Structural Steel Bracket without defect">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/additive/Bdefect.png" data-lightbox="project6" title="Additive Repair">
+                <img src="./img/additive/Bdefect.png" alt="Click for more pictures..." title="Bracket with defect">
+                </a>
+                <a href="./img/additive/defectzoom.png" data-lightbox="project6" title="Additive Repair">
+                    <img src="./img/additive/defectzoom.png" alt="Click for more pictures..." title="Zoomed-in view of defect">
+                </a>
+                <a href="./img/additive/repair.png" data-lightbox="project6" title="Additive Repair">
+                <img src="./img/additive/repair.png" alt="Click for more pictures..." title="Defect repaired using additive manufacturing">
+                </a>
+
             </div>
+        </div>
+
         </div><div class="portfolio-container">
             <div class="portfolio-container_text">        
                 <h3 class="portfolio_accent">Underwater Propulsion System Using Piezoelectric Actuator</h3>
@@ -151,9 +305,31 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p><a target="blank" href="./media/Piezo Fish PPT.pdf">Piezo Fish Presentation</a></p>
             </div>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/piezofish.jpeg" style="width:auto;max-width:100%" alt="Piezo Fish">
+            </div> -->
+
+            <div class="project-thumbnail">
+            <a href="./img/piezofish/piezofish.jpeg" data-lightbox="project7" title="Piezo Fish">
+                <img src="./img/piezofish/piezofish.jpeg" alt="Click for more pictures..." title="Piezo Fish CAD Model">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/piezofish/Construction.png" data-lightbox="project7" title="Piezo Fish">
+                <img src="./img/piezofish/Construction.png" alt="Click for more pictures..." title="Construction of Piezo Fish">
+            </a>
+                <a href="./img/piezofish/Schematic.png" data-lightbox="project7" title="Piezo Fish">
+                <img src="./img/piezofish/Schematic.png" alt="Click for more pictures..." title="Schematic Diagram of Piezo Fish working">
+            </a>
+            <a href="./img/piezofish/addman.png" data-lightbox="project7" title="Piezo Fish">
+                <img src="./img/piezofish/addman.png" alt="Click for more pictures..." title="Additive Manufacturing Simulation using Element Birth and Death">
+            </a>
+            <a href="./img/piezofish/Veldist.png" data-lightbox="project7" title="Piezo Fish">
+                <img src="./img/piezofish/Veldist.png" alt="Click for more pictures..." title="CFD for Velocity Distribution of Piezo Fish Fin">
+            </a>
             </div>
+        </div>
+
+
         </div><div class="portfolio-container">
             <div class="portfolio-container_text">        
                 <h3 class="portfolio_accent">Power Optimization for a Wind Turbine</h3>
@@ -167,9 +343,18 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p><a target="blank" href="./media/PowerOptimizationForWindTurbineFinalReport.pdf">Final Report</a></p>
             </div>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/windturbine.png" alt="Power Optimization For Wind Turbine">
-            </div>
+            </div> -->
+
+            <div class="project-thumbnail">
+            <a href="./img/windturbine.png" data-lightbox="project8" title="Power Optimization For Wind Turbine">
+                <img src="./img/windturbine.png" alt="Click for more pictures..." title="Pareto Analysis">
+            </a>
+           
+        </div>
+
+
         </div><div class="portfolio-container">
             <div class="portfolio-container_text">        
                 <h3 class="portfolio_accent">Production Planning, Control and Management in Flexible Manufacturing Systems (FMS)</h3>
@@ -183,9 +368,17 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p><a target="blank" href="./media/FMS FINAL REPORT.pdf">Final Report</a></p>
             </div>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/FMS.png" style="width:auto;max-width:100%" alt="FMS Schematic">
+            </div> -->
+
+            <div class="project-thumbnail">
+                <a href="./img/FMS.png" data-lightbox="project9" title="FMS">
+                    <img src="./img/FMS.png" alt="Click for more pictures..." title="Schematic Diagram of an FMS">
+                </a>
+                
             </div>
+
         </div><div class="portfolio-container">
             <div class="portfolio-container_text">        
                 <h3 class="portfolio_accent">Design and Analysis of Gun Recoil Control System for an Unmanned Aerial Vehicle</h3>
@@ -199,9 +392,39 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p><a target="blank" href="./media/Drone Innovex Banner.pdf">Poster Presentation</a></p>
             </div>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/drone/Drone_Isometric.jpg" style="width:auto;max-width:100%" alt="Drone">
+            </div> -->
+
+            <div class="project-thumbnail">
+                <a href="./img/drone/Drone_Isometric.jpg" data-lightbox="project10" title="Drone">
+                    <img src="./img/drone/Drone_Isometric.jpg" alt="Click for more pictures..." title="Isometric View of Final Drone">
+                </a>
+                <div class="mini-thumbnails">
+                    <a href="./img/drone/c1.jpeg" data-lightbox="project10" title="Drone">
+                    <img src="./img/drone/c1.jpeg" alt="Click for more pictures..." title="Concept 1">
+                    </a>
+                    <a href="./img/drone/c2.jpeg" data-lightbox="project10" title="Drone">
+                    <img src="./img/drone/c2.jpeg" alt="Click for more pictures..." title="Concept 2">
+                    </a>
+                    <a href="./img/drone/Drone_Front.jpg" data-lightbox="project10" title="Drone">
+                    <img src="./img/drone/Drone_Front.jpg" alt="Click for more pictures..." title="Front View of Final Drone">
+                    </a>
+                    <a href="./img/drone/Drone_Side.jpg" data-lightbox="project10" title="Drone">
+                        <img src="./img/drone/Drone_Side.jpg" alt="Click for more pictures..." title="Side View of Final Drone">
+                    </a>
+                    <a href="./img/drone/Drone_Top.jpg" data-lightbox="project10" title="Drone">
+                    <img src="./img/drone/Drone_Top.jpg" alt="Click for more pictures..." title="Top View of Final Drone">
+                    </a>
+                    <a href="./img/drone/proto.jpg" data-lightbox="project10" title="Drone">
+                    <img src="./img/drone/proto.jpg" alt="Click for more pictures..." title="3D Printed Prototype">
+                    </a>
+                    <a href="./img/drone/teach.JPG" data-lightbox="project10" title="Drone">
+                    <img src="./img/drone/teach.JPG" alt="Click for more pictures..." title="Teaching Students at Innovex">
+                    </a>
+                </div>
             </div>
+
         </div>
         <div class="portfolio-container">
             <div class="portfolio-container_text">        
@@ -216,9 +439,17 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p> <!--<p><a target="blank" href="https://www.linkedin.com/in/shraddheshkamal/details/projects/1172373940/multiple-media-viewer?profileId=ACoAACyq_d4BiwsXJvSfrtQa_r8Yy-ynlqY_1uU&amp;treasuryMediaId=1635542577394&amp;type=DOCUMENT&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3Brgq%2BYStAQFiXn3%2FrCtYuiw%3D%3D">Placeholder</a></p>-->
             </div> </p>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/gokart/gkdc.jpg" style="width:auto;max-width:100%" alt="GKDC">
+            </div> -->
+
+            <div class="project-thumbnail">
+                <a href="./img/gokart/gkdc.jpg" data-lightbox="project11" title="GKDC">
+                    <img src="./img/gokart/gkdc.jpg" alt="Click for more pictures..." title="GKDC Go-Kart">
+                </a>
+                
             </div>
+
         </div><div class="portfolio-container">
             <div class="portfolio-container_text">        
                 <h3 class="portfolio_accent">Design and Manufacturing of Student Formula Race Car</h3>
@@ -234,9 +465,34 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                     
                 <p><!--<p><a target="blank" href="https://www.linkedin.com/in/shraddheshkamal/details/projects/1172373940/multiple-media-viewer?profileId=ACoAACyq_d4BiwsXJvSfrtQa_r8Yy-ynlqY_1uU&amp;treasuryMediaId=1635542577394&amp;type=DOCUMENT&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3Brgq%2BYStAQFiXn3%2FrCtYuiw%3D%3D">Placeholder</a></p>-->
             </div> </p>
-            <div class="portfolio-container_text">
+            <!-- <div class="portfolio-container_text">
                 <img class="portfolio_image" src="./img/fsae/fsaeCar.jpg" style="width:auto;max-width:100%" alt="FSAE Car">
+            </div> -->
+
+
+            <div class="project-thumbnail">
+                <a href="./img/fsae/fsaeCar.jpg" data-lightbox="project12" title="FSAE Car">
+                    <img src="./img/fsae/fsaeCar.jpg" alt="Click for more pictures..." title="FSAE Car">
+                </a>
+                <div class="mini-thumbnails">
+                    <a href="./img/fsae/Car2.jpg" data-lightbox="project12" title="FSAE Car">
+                    <img src="./img/fsae/Car2.jpg" alt="Click for more pictures..." title="FSAE Car 2">
+                    </a>
+                    <a href="./img/fsae/sponsors.jpg" data-lightbox="project12" title="FSAE Car">
+                        <img src="./img/fsae/sponsors.jpg" alt="Click for more pictures..." title="Sponsors">
+                    </a>
+                    <a href="./img/fsae/welding.jpg" data-lightbox="project12" title="FSAE Car">
+                    <img src="./img/fsae/welding.jpg" alt="Click for more pictures..." title="Chassis Welding">
+                    </a>
+                    <a href="./img/fsae/chassis.jpg" data-lightbox="project12" title="FSAE Car">
+                    <img src="./img/fsae/chassis.jpg" alt="Click for more pictures..." title="Suspension Setup">
+                    </a>
+                    <a href="./img/fsae/ID.jpg" data-lightbox="project12" title="FSAE Car">
+                    <img src="./img/fsae/ID.jpg" alt="Click for more pictures..." title="Competition ID">
+                    </a>
+                </div>
             </div>
+
         </div><div class="portfolio-container">
             <div class="portfolio-container_text">        
                 <h3 class="portfolio_accent">Design of Centrifugal Pump for Domestic Application</h3>
@@ -255,4 +511,24 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
 
 
  
-<div id="hl-aria-live-message-container" aria-live="polite" class="visually-hidden"></div><div id="hl-aria-live-alert-container" role="alert" aria-live="assertive" class="visually-hidden"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+<div id="hl-aria-live-message-container" aria-live="polite" class="visually-hidden"></div><div id="hl-aria-live-alert-container" role="alert" aria-live="assertive" class="visually-hidden"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.js"></script>
+    <script>
+        // Initialize SimpleLightbox
+        var project1gallery = new SimpleLightbox('[data-lightbox="project1"]');
+        var project2gallery = new SimpleLightbox('[data-lightbox="project2"]');
+        var project3gallery = new SimpleLightbox('[data-lightbox="project3"]');
+        var project4gallery = new SimpleLightbox('[data-lightbox="project4"]');
+        var project5gallery = new SimpleLightbox('[data-lightbox="project5"]');
+        var project6gallery = new SimpleLightbox('[data-lightbox="project6"]');
+        var project7gallery = new SimpleLightbox('[data-lightbox="project7"]');
+        var project8gallery = new SimpleLightbox('[data-lightbox="project8"]');
+        var project9gallery = new SimpleLightbox('[data-lightbox="project9"]');
+        var project10gallery = new SimpleLightbox('[data-lightbox="project10"]');
+        var project11gallery = new SimpleLightbox('[data-lightbox="project11"]');
+        var project12gallery = new SimpleLightbox('[data-lightbox="project12"]');
+        // need to add for other projects with different name. also make sure to change data-lightbox property when adding images above
+    </script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
