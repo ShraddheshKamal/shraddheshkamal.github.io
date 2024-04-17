@@ -120,6 +120,15 @@ a {
   list-style-position: inside;
 }
 
+.company-header {
+  display: flex; 
+}
+
+.company-logo {
+  margin-right: 10px; 
+  flex-shrink: 0;
+}
+
 .portfolio_accent {
   color:  #F1C40F;
 }
