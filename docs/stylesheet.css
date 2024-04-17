@@ -113,7 +113,6 @@ a {
 .tableau-column-text {
   flex: 1;  /* Ensures each column takes up equal space */
   padding: 15px;  /* Adds space inside the columns */
-  text-align: justify;
 }
 
 .bullet-points {
