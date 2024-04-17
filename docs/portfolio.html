@@ -97,41 +97,50 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                 if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
                 else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
                 else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
-
-
-
-    <div class="portfolio-container">
-        <div class="portfolio-container_text">
-          <h3 class="portfolio_accent">Used Car Decision Dashboard</h3>
-          <ul>
-            
-              <b>Objective</b>: As a new graduate in Texas moving away from the university campus, I needed a reliable source of personal transportation. I started looking for used cars on the internet, but the vast number of options were confusing and somewhat overwhelming. Everyone wants the best deal in terms of cost and reliability. The objective of this project was to adopt a data-driven approach to determine which of the most common car brands that I see on the roads would be a reliable choice.
-        <br> <br>
+    
+    <div>
+        <h3 class="portfolio_accent">Used Car Decision Dashboard</h3>
+        <div class="tableau-container">
+            <div class="tableau-column-text">
+                    <b>Objective</b>: <br>
+                    As a new graduate in Texas moving away from the university campus, I needed a reliable
+                    source of personal transportation. I started looking for used cars on the internet, but the vast number of
+                    options were confusing and somewhat overwhelming. Everyone wants the best deal in terms of cost and
+                    reliability. The objective of this project was to adopt a data-driven approach to determine which of the
+                    most common car brands that I see on the roads would be a reliable choice.
+            </div>
+            <div class="tableau-column-text">
+                    <b>Achievement</b>:
+                    <br> 
+                <ul class="bullet-points">
+                    <li>Developed Tableau dashboard utilizing NHTSA dataset of 235461 rows of entries for 19
+                        car brands post-2009, aiding used car reliability assessment</li>
+                    <li>Implemented filters for granular analysis by state and issue type, enhancing user insights</li>
+                    <li>Monitored KPIs including total complaints per brand and issue distribution, facilitating informed
+                        decisions</li>
         
-              <b>Achievement</b>: <li>Developed Tableau dashboard utilizing NHTSA dataset of 235461 rows of entries for 19 car brands post-2009, aiding used car reliability assessment</li>
-<li>Implemented filters for granular analysis by state and issue type, enhancing user insights</li>
-<li>Monitored KPIs including total complaints per brand and issue distribution, facilitating informed decisions</li>
-            
-            <li>Achieved a 99.69% reduction in manual data analysis time and improved decision-making efficiency</li>
-            <li>Mitigated risks by identifying potential issues early, preventing costly future servicing and maintenance charges, thereby improving ROI (Return-On-Investment)</li>
-            <li>Bought my first car!</li>
-          </ul>
+                    <li>Achieved a 99.69% reduction in manual data analysis time and improved decision-making efficiency</li>
+                    <li>Mitigated risks by identifying potential issues early, preventing costly future servicing and
+                        maintenance charges, thereby improving ROI (Return-On-Investment)</li>
+                    <li>Bought my first car!</li>
+                </ul>
+            </div>
         </div>
 
-        <div class='tableauPlaceholder' id='viz1713247003163' style='position: relative'>
-            <noscript><a href='#'>
-            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;UsedCarDecision&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+        <div class='tableauPlaceholder' id='viz1713247003163' style='position: relative; width: 100%;'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/Us/UsedCarDecision/Dashboard1/1_rss.png' style='border: none' />
                 </a>
             </noscript>
-            <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-            <object class='tableauViz'  style='display:none;'>
+            <object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
                 <param name='name' value='UsedCarDecision&#47;Dashboard1' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;UsedCarDecision&#47;Dashboard1&#47;1.png' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Us/UsedCarDecision/Dashboard1/1.png' />
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
@@ -141,20 +150,22 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                 <param name='filter' value='publish=yes' />
             </object>
         </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1713247003163');                       
-                var vizElement = divElement.getElementsByTagName('object')[0];                    
-                if ( divElement.offsetWidth > 800 ) { 
-                vizElement.style.width='100%';
-                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-                else if ( divElement.offsetWidth > 500 ) { 
-                vizElement.style.width='100%';
-                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-                else { vizElement.style.width='100%';
-                vizElement.style.height='1477px';}                     
-                var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
-            </script>
-      </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1713247003163');                       
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            function adjustDashboardSize() {
+                var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                vizElement.style.width = '100%';
+                // Set height proportional to the width (e.g., width * 0.75 to maintain a rectangle shape)
+                vizElement.style.height = (width * 0.45) + 'px';
+            }
+            window.onresize = adjustDashboardSize;
+            adjustDashboardSize(); // Adjust size initially
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+        </script>
+    </div>
 
 
     <div class="portfolio-container">

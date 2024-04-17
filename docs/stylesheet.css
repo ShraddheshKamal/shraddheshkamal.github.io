@@ -106,6 +106,21 @@ a {
   padding: 5% 5% 5% 5%;
 }
 
+.tableau-container {
+  display: flex;
+}
+
+.tableau-column-text {
+  flex: 1;  /* Ensures each column takes up equal space */
+  padding: 15px;  /* Adds space inside the columns */
+  text-align: justify;
+}
+
+.bullet-points {
+  padding-left: 0; 
+  list-style-position: inside;
+}
+
 .portfolio_accent {
   color:  #F1C40F;
 }
