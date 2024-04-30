@@ -21,12 +21,23 @@ body {
   overflow-x: hidden;
   
 }
+.navlink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link-item {
+  flex-grow: 4;
+}
 
 .navblock {
   margin:auto;
   width: 100%;
   height: 90%;
   display: flex;
+  flex-direction: column;
 }
 
 .navblock_text {
