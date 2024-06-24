@@ -118,7 +118,49 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
                 if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
                 else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
                 else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
-    
+   
+    <div class="portfolio-container">
+        <div class="portfolio-container_text">        
+            <h3 class="portfolio_accent">Apple Watch Series 8, 45mm</h3>
+                
+            <p></p>
+<li>Decided to revive and improve upon a project that I originally started working on last year</li>            
+<li>Created a multi-body 3D CAD modeled part on SolidWorks using product dimensions for watch band lug-latch assembly and watch body available on Apple’s Official Accessory Design Guidelines</li>
+<li>Used features like swept cut, circular pattern, etc. and surface modeling tools like thicken, thickened cut, etc</li>
+<li>Converted the multi-body part into an assembly with multiple parts using Save Bodies command</li>
+<li>Performed a motion study and created a pre-rendering mockup for final design/advertisement UI</li>
+<br><br><b>Coming up soon</b>: <br><br>
+<li>Mechanical Drawings with BOM and GD&T</li>
+<li>FEA for entire watch assembly</li>
+<li>FEA for the watch bands to determine stresses created due to lateral slide-out force and pull force</li>
+<li>Drop test simulation for watch assembly</li>
+<li>Rendering using SolidWorks Visualize or KeyShot</li>
+<li>STL Files for you to create your own watch bands and accessories!</li>
+<p></p> <br><br> Link to the <a target="blank" href="https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf">Official Accessory Design Guidelines for Apple Devices</a> <br>(For all images, logos and content used in the project, credits to the original creator/owner. No copyright infringement intended.)</p>
+                
+            <p><a target="blank" href="https://github.com/ShraddheshKamal/shraddheshkamal.github.io/blob/main/docs/stl/Apple Watch Assembly - Band with Holes-1.STL">Apple Watch Band with Holes STL File</a> <br> <a target="blank" href="https://github.com/ShraddheshKamal/shraddheshkamal.github.io/blob/main/docs/stl/Apple Watch Assembly - Band with loop and pin-1.STL">Apple Watch Band with loop and pin STL File</a> </p>
+        </div>
+        <div class="project-thumbnail">
+            <a href="./img/AWatch/applewatch.png" data-lightbox="project14" title="Apple Watch Series 8, 45mm">
+                <img src="./img/AWatch/applewatch.png" alt="Click for more pictures..." title="Pre-rendering Mockup">
+            </a>
+            <div class="mini-thumbnails">
+                <a href="./img/AWatch/Apple Watch Series 8.GIF" data-lightbox="project14" title="Apple Watch Series 8, 45mm">
+                <img src="./img/AWatch/Apple Watch Series 8.GIF" alt="Click for more pictures..." title="Exploded View">
+                </a>
+                <!--<a href="./img/LMNS/LMNS_3.jpeg" data-lightbox="project14" title="Apple Watch Series 8 45mm">
+                    <img src="./img/LMNS/LMNS_3.jpeg" alt="Click for more pictures..." title="Original 3D Printed Prototype Picture 2">
+                </a>
+                <a href="./img/LMNS/LMNS_4.jpg" data-lightbox="project14" title="Apple Watch Series 8 45mm">
+                    <img src="./img/LMNS/LMNS_4.jpg" alt="Click for more pictures..." title="Improvement Sketch 1">
+                </a>
+                <a href="./img/LMNS/LMNS_5.jpg" data-lightbox="project14" title="Apple Watch Series 8 45mm">
+                    <img src="./img/LMNS/LMNS_5.jpg" alt="Click for more pictures..." title="Improvement Sketch 2">
+                </a>-->
+            </div>
+        </div>
+    </div>
+
     <div>
         <h3 class="portfolio_accent">Used Car Decision Dashboard</h3>
         <div class="tableau-container">
@@ -734,6 +776,7 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
         var project11gallery = new SimpleLightbox('[data-lightbox="project11"]');
         var project12gallery = new SimpleLightbox('[data-lightbox="project12"]');
         var project13gallery = new SimpleLightbox('[data-lightbox="project13"]');
+        var project14gallery = new SimpleLightbox('[data-lightbox="project14"]');
         // need to add for other projects with different name. also make sure to change data-lightbox property when adding images above
     </script>
 
